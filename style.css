@@ -1,0 +1,381 @@
+@font-face {
+  font-family: "PTSans";
+  src: url(./assets/fonts/PTSans/PTSans-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url(./assets/fonts/PTSans/PTSans-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Viga";
+  src: url(./assets/fonts/Viga-Regular.ttf);
+}
+
+/* BASIC CLASSES ################################################################# */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "PTSans", sans-serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.color-gold {
+  color: rgb(175, 134, 72);
+}
+
+.background-color-gold {
+  background-color: rgb(175, 134, 72);
+}
+
+
+/* <!-- HERO SECTION - ABOVE THE FOLD --###############################################################> */
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./assets/img/header.png);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+}
+
+.atf-content {
+  height: 100%;
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-header {
+  width: 100%;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 100px;
+}
+
+.hero-nav-bar {
+  display: flex;
+  height: 26px;
+}
+
+.hero-nav-bar img {
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.hero-nav-bar a {
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  margin-left: 40px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hero-nav-bar a:hover {
+  transform: translateY(-3px);
+  filter: drop-shadow(3px 3px 2px rgb(175, 134, 72));
+}
+
+.atf-content h1 {
+  font-family: "Viga";
+  font-size: 116px;
+  font-weight: 200;
+  margin-top: 210px;
+  margin-bottom: 0;
+}
+
+.atf-content p {
+  font-size: 26px;
+  margin: 0px;
+}
+
+.show-link {
+  font-size: 26px;
+  color: white;
+  text-decoration: none;
+  background-color: rgb(175, 134, 72);
+  margin-top: 100px;
+  padding: 16px;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.show-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 6px rgb(175, 134, 72);
+}
+
+
+/* MEDIATHEK CONTENT ################################################################################### */
+.mediathek-section {
+  display: flex;
+  justify-content: center;
+}
+
+.mediathek-content {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 81px;
+  margin-bottom: 150px;
+}
+
+.mediathek-content-box {
+  font-size: 26px;
+  color: rgb(175, 134, 72);
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mediathek-headline {
+  padding-bottom: 18px;
+}
+
+.mediathek-anchor {
+  /* height: 460px; */
+  width: clamp(300px, 460px, 460px);
+  aspect-ratio: 1 / 1;
+  transition: all 0.2s ease;
+}
+
+.mediathek-anchor:hover {
+  transform: scale(0.98);
+}
+
+.mediathek-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease;
+
+}
+
+.mediathek-img:hover {
+  box-shadow: 0px 0px 6px 2px rgb(175, 134, 72)
+}
+
+/* FESTIVAL SECTION ################################################################# */
+
+.festival-section {
+  background-color: rgb( 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  
+}
+
+.festival-content {
+  display: flex;
+  width: 1440px;
+  height: 460px;
+}
+
+.festrival-image {
+  width: 460px;
+  height: 460px;
+  object-fit: cover;
+}
+
+
+.festival-content-innerbox {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(39,39,39);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+
+.festival-text-box {
+  margin-left: 64px;
+  margin-right: 64px;
+  font-size: 20px;
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: none;
+  
+}
+
+.festival-date {
+  font-size: 28px;
+}
+
+.festival-location {
+  font-size: 36px;
+  padding-top: 4px;
+  padding-bottom: 16px;
+}
+
+.festival-divider-box {
+  width: 2px;
+  height: 100%;
+  background-color: white;
+}
+
+.festival-button-box {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 64px;
+  margin-right: 64px;
+}
+
+.buy-ticket {
+  padding-left: 48px;
+  padding-right: 48px;
+  margin: 0;
+}
+
+
+/* FOLLOW SECTION ############################################################# */
+
+.follow-section {
+  display: flex;
+  justify-content: center;
+}
+
+.follow-content {
+  width: 1440px;
+  padding: 64px;
+  font-size: 26px;
+  text-align: center;
+  background-color: white;
+  color: rgb(175, 134, 72);
+}
+
+
+/* VIDEO SECTION ############################################################### */
+
+.video-section {
+  display: flex;
+  justify-content: center;
+}
+
+.video-content {
+  width: 1440px;
+  height: 100vh;
+  background-image: url(./assets/img/bottom.png);
+  background-size: cover;
+  background-position: center;
+}
+
+
+/* FOOTER SECTION ################################################################ */
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  width: 1440px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+
+.footer-text {
+  font-size: 20px;
+  width: 590px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0;
+}
+
+.contact-box {
+  width: 780px;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 8px;
+}
+
+.contact-social-media {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  padding-bottom: 32px;
+  padding-top: 64px;
+}
+
+.footer-social-media-links img {
+  width: 60px;
+  height: 60px;
+  transition: all 0.2s ease;
+}
+
+.footer-social-media-links img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 0px 6px rgb(175, 134, 72);
+}
+
+.contact-email {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-email-input {
+  width: 100%;
+  font-size: 24px;
+  padding-left: 24px;
+  border: none;
+}
+
+.contact-email-input::placeholder {
+  color: rgb(194, 194, 194);
+}
+
+.contact-email-input:focus {
+  outline: none;
+  border: none;
+}
+
+.contact-submit-btn {
+  font-size: 24px;
+  width: 400px;
+  color: white;
+  border: none;
+  text-decoration: none;
+  background-color: rgb(175, 134, 72);
+  transition: all 0.2s ease;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.contact-submit-btn:hover {
+  box-shadow: 0px 0px 6px rgb(175, 134, 72);
+  transform: translateY(-3px);
+}
+
